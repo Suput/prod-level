@@ -1,0 +1,20 @@
+<div>
+  <h1 [style]="style_h1">Этот сайт называется {{ title }}</h1>
+  <button (click)="log()">Press me!</button>
+</div>
+<div>
+  <input type="text" [(ngModel)]="text" />
+  <p>{{ text }}</p>
+</div>
+<div>
+  <app-child [username]="name" [userage]="age"></app-child>
+  <div>
+    <input type="text" [(ngModel)]="name" />
+  </div>
+  <div>
+    <input type="number" [(ngModel)]="age" />
+  </div>
+</div>
+<div>
+  <app-pipes-test></app-pipes-test>
+</div>

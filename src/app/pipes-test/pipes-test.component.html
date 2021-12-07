@@ -1,0 +1,19 @@
+<div>Что находится в переменной string: {{string | uppercase}}</div>
+<div>Что находится в переменной string: {{string | lowercase}}</div>
+<div>Что находится в переменной num: {{ num }}</div>
+<div>Что находится в переменной num: {{num | percent}}</div>
+<div>Что находится в переменной num: {{num | currency}}</div>
+
+
+<hr>
+<div>
+    {{string | slice:3:7}}
+</div>
+
+<hr>
+<div>
+    {{myDate}}
+</div>
+<div>
+    {{ myDate | date:"dd.MM.yyyy"}}
+</div>
